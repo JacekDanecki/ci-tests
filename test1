@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git clone ../ci-tests repo
+docker build -t test1 .
+
+

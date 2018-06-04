@@ -1,19 +1,15 @@
-dist: xenial
 language: c
+compiler:
+    - gcc
 sudo: required
-apt:
-    update: true
-before_install:
-     - sudo ./install-deps
+services:
+    - docker
+
 matrix:
     include:
         - os: linux
           compiler: gcc
           env: TEST=gcc
-        - os: linux
-          compiler: clang
-          env: TEST=clang
 
 script:
-     - ./configure
-
+     - ./test1

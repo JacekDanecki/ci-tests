@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pwd
+cd /root/repo
+pwd
+git tag -l
+git describe --tags
+
