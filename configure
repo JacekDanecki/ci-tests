@@ -52,5 +52,5 @@ df -h
 echo "environment variables"
 set
 
-echo "check ccache"
-ccache --version
+#echo "check ccache"
+#ccache --version
